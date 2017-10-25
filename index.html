@@ -14,27 +14,11 @@
   }
 </style>
 <title>ilan</title>
-    
+
   </head>
   <body>
-    <span class="header">I'm outside app</span>
-    <div id="app" >this is main.js:{{name}} = {{msg}}
-        <!--==============parent==============-->
-        <parent id="parent" inline-template>
-          <div class="wrapper">
-                <span class="header"> I'm parent:{{name}}={{msg}}</span>
-               
-                 <!--==============child1==============-->
-                <child1 id="child1" :names=names inline-template >
-                  <div class="wrapper">child1:{{name}}={{msg}}/ prop:{{names[0]}} </div>
-                </child1>
-                <!--==============child2==============-->
-                <child2 id="child2" :names=names inline-template >
-                  <div class="wrapper">his brother:{{name}}={{msg}}/ prop:{{names[1]}}</div>
-                </child2>
-          </div>
+        <parent id="app">
+          
         </parent>
-    </div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
